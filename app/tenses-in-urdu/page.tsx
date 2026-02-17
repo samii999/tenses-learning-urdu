@@ -142,7 +142,7 @@ export default function TensesInUrduPage() {
             <span className="bg-white/20 px-4 py-2 rounded-full">English grammar tenses in Urdu</span>
           </div>
           <Link 
-            href="/tenses" 
+            href="/tenses/present-simple" 
             className="inline-flex items-center bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg text-lg transition duration-300"
           >
             Start Learning All Tenses
