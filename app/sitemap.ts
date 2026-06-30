@@ -6,10 +6,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ===== MAIN PAGES =====
   const mainPages = [
     { path: '', priority: 1.0, changefreq: 'daily' as const },
-    // ✅ INCLUDED: Now works because of redirect!
     { path: '/tenses', priority: 0.9, changefreq: 'daily' as const },
     { path: '/tenses-in-urdu', priority: 0.9, changefreq: 'daily' as const },
-    // ✅ INCLUDED: Now works because of redirect!
     { path: '/exercises', priority: 0.9, changefreq: 'daily' as const },
     { path: '/exercises-in-urdu', priority: 0.9, changefreq: 'daily' as const },
     { path: '/quizzes', priority: 0.9, changefreq: 'daily' as const },
@@ -23,10 +21,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/privacy-policy', priority: 0.7, changefreq: 'monthly' as const },
     { path: '/terms', priority: 0.7, changefreq: 'monthly' as const },
     { path: '/faq', priority: 0.6, changefreq: 'monthly' as const },
-    // ✅ NEW: Redirects that work!
-    { path: '/progress', priority: 0.5, changefreq: 'monthly' as const },
-    { path: '/quizzes-in-urdu', priority: 0.5, changefreq: 'monthly' as const },
-    { path: '/grammar-basics', priority: 0.5, changefreq: 'monthly' as const },
   ]
 
   // ===== ALL 12 TENSES =====
@@ -108,7 +102,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ===== BUILD SITEMAP =====
   const sitemapEntries: MetadataRoute.Sitemap = []
 
-  // 1. Main Pages (including redirects)
+  // 1. Main Pages
   for (const page of mainPages) {
     sitemapEntries.push({
       url: `${baseUrl}${page.path}`,
