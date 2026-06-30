@@ -3,19 +3,21 @@ import { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://tensesurdu.vercel.app'
   
-  // ===== MAIN PAGES (Including new legal pages) =====
+  // ===== MAIN PAGES (ONLY WORKING PAGES) =====
   const mainPages = [
     { path: '', priority: 1.0, changefreq: 'daily' as const },
-    { path: '/tenses', priority: 0.9, changefreq: 'daily' as const },
+    // ❌ REMOVED: '/tenses' (no page.tsx)
+    // ✅ KEPT: '/tenses-in-urdu' (has page.tsx)
     { path: '/tenses-in-urdu', priority: 0.9, changefreq: 'daily' as const },
-    { path: '/exercises', priority: 0.9, changefreq: 'daily' as const },
+    // ❌ REMOVED: '/exercises' (no page.tsx)
+    // ✅ KEPT: '/exercises-in-urdu' (has page.tsx)
     { path: '/exercises-in-urdu', priority: 0.9, changefreq: 'daily' as const },
     { path: '/quizzes', priority: 0.9, changefreq: 'daily' as const },
     { path: '/mistakes', priority: 0.9, changefreq: 'daily' as const },
     { path: '/grammer-basics-in-urdu', priority: 0.8, changefreq: 'weekly' as const },
     { path: '/tips', priority: 0.8, changefreq: 'weekly' as const },
     { path: '/verb-forms', priority: 0.8, changefreq: 'weekly' as const },
-    // Legal & Information Pages (NEW)
+    // Legal & Information Pages
     { path: '/about', priority: 0.7, changefreq: 'monthly' as const },
     { path: '/contact', priority: 0.7, changefreq: 'monthly' as const },
     { path: '/privacy-policy', priority: 0.7, changefreq: 'monthly' as const },
@@ -23,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/faq', priority: 0.6, changefreq: 'monthly' as const },
   ]
 
-  // ===== ALL 12 TENSES =====
+  // ===== ALL 12 TENSES (WORKING - have page.tsx) =====
   const tenses = [
     'present-simple',
     'present-continuous',
@@ -39,9 +41,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'future-perfect-continuous',
   ]
 
-  // ===== ALL 24 EXERCISES =====
+  // ===== ALL 24 EXERCISES (WORKING - have page.tsx) =====
   const exercises = [
-    // Present Tenses (8 exercises)
     'present-simple-exercise-1',
     'present-simple-exercise-2',
     'present-continuous-exercise-1',
@@ -50,8 +51,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'present-perfect-exercise-2',
     'present-perfect-continuous-exercise-1',
     'present-perfect-continuous-exercise-2',
-    
-    // Past Tenses (8 exercises)
     'past-simple-exercise-1',
     'past-simple-exercise-2',
     'past-continuous-exercise-1',
@@ -60,8 +59,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'past-perfect-exercise-2',
     'past-perfect-continuous-exercise-1',
     'past-perfect-continuous-exercise-2',
-    
-    // Future Tenses (8 exercises)
     'future-simple-exercise-1',
     'future-simple-exercise-2',
     'future-continuous-exercise-1',
@@ -72,7 +69,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'future-perfect-continuous-exercise-2',
   ]
 
-  // ===== ALL 12 QUIZZES =====
+  // ===== ALL 12 QUIZZES (WORKING - have page.tsx) =====
   const quizzes = [
     'present-simple-quiz',
     'present-continuous-quiz',
@@ -88,7 +85,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'future-perfect-continuous-quiz',
   ]
 
-  // ===== ALL 12 MISTAKES PAGES =====
+  // ===== ALL 12 MISTAKES PAGES (WORKING - have page.tsx) =====
   const mistakes = [
     'present-simple',
     'present-continuous',
@@ -107,7 +104,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ===== BUILD SITEMAP =====
   const sitemapEntries: MetadataRoute.Sitemap = []
 
-  // 1. Main Pages (including new legal pages)
+  // 1. Main Pages
   for (const page of mainPages) {
     sitemapEntries.push({
       url: `${baseUrl}${page.path}`,
@@ -117,7 +114,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
-  // 2. Tenses
+  // 2. Tenses (Individual pages - HAVE page.tsx)
   for (const tense of tenses) {
     sitemapEntries.push({
       url: `${baseUrl}/tenses/${tense}`,
@@ -127,7 +124,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
-  // 3. Exercises
+  // 3. Exercises (Individual pages - HAVE page.tsx)
   for (const exercise of exercises) {
     sitemapEntries.push({
       url: `${baseUrl}/exercises/${exercise}`,
