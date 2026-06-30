@@ -255,7 +255,7 @@ export default function FuturePerfectContinuousExercise2() {
               Previous Exercise
             </Link>
             <Link 
-              href="/exercises"
+              href="/exercises-in-urdu"
               className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 inline-flex items-center"
             >
               Back to All Exercises

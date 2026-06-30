@@ -685,7 +685,7 @@ export default function FuturePerfectContinuousPage() {
             </Link>
             
             <Link 
-              href="/exercises"
+              href="/exercises-in-urdu"
               className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 border-2 border-purple-200 text-center group"
             >
               <div className="text-purple-600 text-3xl mb-4">📝</div>
