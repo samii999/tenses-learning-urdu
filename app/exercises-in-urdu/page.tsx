@@ -379,10 +379,10 @@ export default function ExercisesPage() {
         </div>
       </section>
 
-      {/* Navigation Links */}
+      {/* Navigation Links - FIXED! */}
       <section className="py-12 px-4 bg-gray-100">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Link 
               href="/tenses-in-urdu" 
               className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 text-center"
@@ -397,14 +397,6 @@ export default function ExercisesPage() {
             >
               <h3 className="text-xl font-bold text-gray-900 mb-2">Test with Quizzes →</h3>
               <p className="text-gray-600">Assess your knowledge</p>
-            </Link>
-            
-            <Link 
-              href="/progress" 
-              className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300 text-center"
-            >
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Track Progress →</h3>
-              <p className="text-gray-600">Monitor your improvement</p>
             </Link>
           </div>
         </div>

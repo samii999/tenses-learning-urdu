@@ -3,29 +3,33 @@ import { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://tensesurdu.vercel.app'
   
-  // ===== MAIN PAGES (ONLY WORKING PAGES) =====
+  // ===== MAIN PAGES =====
   const mainPages = [
     { path: '', priority: 1.0, changefreq: 'daily' as const },
-    // ❌ REMOVED: '/tenses' (no page.tsx)
-    // ✅ KEPT: '/tenses-in-urdu' (has page.tsx)
+    // ✅ INCLUDED: Now works because of redirect!
+    { path: '/tenses', priority: 0.9, changefreq: 'daily' as const },
     { path: '/tenses-in-urdu', priority: 0.9, changefreq: 'daily' as const },
-    // ❌ REMOVED: '/exercises' (no page.tsx)
-    // ✅ KEPT: '/exercises-in-urdu' (has page.tsx)
+    // ✅ INCLUDED: Now works because of redirect!
+    { path: '/exercises', priority: 0.9, changefreq: 'daily' as const },
     { path: '/exercises-in-urdu', priority: 0.9, changefreq: 'daily' as const },
     { path: '/quizzes', priority: 0.9, changefreq: 'daily' as const },
     { path: '/mistakes', priority: 0.9, changefreq: 'daily' as const },
     { path: '/grammer-basics-in-urdu', priority: 0.8, changefreq: 'weekly' as const },
     { path: '/tips', priority: 0.8, changefreq: 'weekly' as const },
     { path: '/verb-forms', priority: 0.8, changefreq: 'weekly' as const },
-    // Legal & Information Pages
+    // Legal pages
     { path: '/about', priority: 0.7, changefreq: 'monthly' as const },
     { path: '/contact', priority: 0.7, changefreq: 'monthly' as const },
     { path: '/privacy-policy', priority: 0.7, changefreq: 'monthly' as const },
     { path: '/terms', priority: 0.7, changefreq: 'monthly' as const },
     { path: '/faq', priority: 0.6, changefreq: 'monthly' as const },
+    // ✅ NEW: Redirects that work!
+    { path: '/progress', priority: 0.5, changefreq: 'monthly' as const },
+    { path: '/quizzes-in-urdu', priority: 0.5, changefreq: 'monthly' as const },
+    { path: '/grammar-basics', priority: 0.5, changefreq: 'monthly' as const },
   ]
 
-  // ===== ALL 12 TENSES (WORKING - have page.tsx) =====
+  // ===== ALL 12 TENSES =====
   const tenses = [
     'present-simple',
     'present-continuous',
@@ -41,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'future-perfect-continuous',
   ]
 
-  // ===== ALL 24 EXERCISES (WORKING - have page.tsx) =====
+  // ===== ALL 24 EXERCISES =====
   const exercises = [
     'present-simple-exercise-1',
     'present-simple-exercise-2',
@@ -69,7 +73,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'future-perfect-continuous-exercise-2',
   ]
 
-  // ===== ALL 12 QUIZZES (WORKING - have page.tsx) =====
+  // ===== ALL 12 QUIZZES =====
   const quizzes = [
     'present-simple-quiz',
     'present-continuous-quiz',
@@ -85,7 +89,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'future-perfect-continuous-quiz',
   ]
 
-  // ===== ALL 12 MISTAKES PAGES (WORKING - have page.tsx) =====
+  // ===== ALL 12 MISTAKES PAGES =====
   const mistakes = [
     'present-simple',
     'present-continuous',
@@ -104,7 +108,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ===== BUILD SITEMAP =====
   const sitemapEntries: MetadataRoute.Sitemap = []
 
-  // 1. Main Pages
+  // 1. Main Pages (including redirects)
   for (const page of mainPages) {
     sitemapEntries.push({
       url: `${baseUrl}${page.path}`,
@@ -114,7 +118,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
-  // 2. Tenses (Individual pages - HAVE page.tsx)
+  // 2. Individual Tenses
   for (const tense of tenses) {
     sitemapEntries.push({
       url: `${baseUrl}/tenses/${tense}`,
@@ -124,7 +128,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
-  // 3. Exercises (Individual pages - HAVE page.tsx)
+  // 3. Individual Exercises
   for (const exercise of exercises) {
     sitemapEntries.push({
       url: `${baseUrl}/exercises/${exercise}`,
