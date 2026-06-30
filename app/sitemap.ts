@@ -1,26 +1,29 @@
 import { MetadataRoute } from 'next'
 
-// List of all your website URLs
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://tensesurdu.vercel.app'
   
-  // Main pages
-  const routes = [
-    '',
-    '/tenses',
-    '/tenses-in-urdu',
-    '/exercises-in-urdu',
-    '/exercises',
-    '/quizzes',
-    '/quizzes-in-urdu',
-    '/mistakes',
-    '/tips',
-    '/progress',
-    '/grammar-basics-in-urdu',
-    '/verb-forms',
+  // ===== MAIN PAGES (Including new legal pages) =====
+  const mainPages = [
+    { path: '', priority: 1.0, changefreq: 'daily' as const },
+    { path: '/tenses', priority: 0.9, changefreq: 'daily' as const },
+    { path: '/tenses-in-urdu', priority: 0.9, changefreq: 'daily' as const },
+    { path: '/exercises', priority: 0.9, changefreq: 'daily' as const },
+    { path: '/exercises-in-urdu', priority: 0.9, changefreq: 'daily' as const },
+    { path: '/quizzes', priority: 0.9, changefreq: 'daily' as const },
+    { path: '/mistakes', priority: 0.9, changefreq: 'daily' as const },
+    { path: '/grammer-basics-in-urdu', priority: 0.8, changefreq: 'weekly' as const },
+    { path: '/tips', priority: 0.8, changefreq: 'weekly' as const },
+    { path: '/verb-forms', priority: 0.8, changefreq: 'weekly' as const },
+    // Legal & Information Pages (NEW)
+    { path: '/about', priority: 0.7, changefreq: 'monthly' as const },
+    { path: '/contact', priority: 0.7, changefreq: 'monthly' as const },
+    { path: '/privacy-policy', priority: 0.7, changefreq: 'monthly' as const },
+    { path: '/terms', priority: 0.7, changefreq: 'monthly' as const },
+    { path: '/faq', priority: 0.6, changefreq: 'monthly' as const },
   ]
-  
-  // All 12 tenses
+
+  // ===== ALL 12 TENSES =====
   const tenses = [
     'present-simple',
     'present-continuous',
@@ -35,9 +38,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'future-perfect',
     'future-perfect-continuous',
   ]
-  
-  // All exercises (2 per tense = 24 exercises)
+
+  // ===== ALL 24 EXERCISES =====
   const exercises = [
+    // Present Tenses (8 exercises)
     'present-simple-exercise-1',
     'present-simple-exercise-2',
     'present-continuous-exercise-1',
@@ -46,6 +50,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'present-perfect-exercise-2',
     'present-perfect-continuous-exercise-1',
     'present-perfect-continuous-exercise-2',
+    
+    // Past Tenses (8 exercises)
     'past-simple-exercise-1',
     'past-simple-exercise-2',
     'past-continuous-exercise-1',
@@ -54,6 +60,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'past-perfect-exercise-2',
     'past-perfect-continuous-exercise-1',
     'past-perfect-continuous-exercise-2',
+    
+    // Future Tenses (8 exercises)
     'future-simple-exercise-1',
     'future-simple-exercise-2',
     'future-continuous-exercise-1',
@@ -63,8 +71,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'future-perfect-continuous-exercise-1',
     'future-perfect-continuous-exercise-2',
   ]
-  
-  // All quizzes (1 per tense = 12 quizzes)
+
+  // ===== ALL 12 QUIZZES =====
   const quizzes = [
     'present-simple-quiz',
     'present-continuous-quiz',
@@ -79,8 +87,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'future-perfect-quiz',
     'future-perfect-continuous-quiz',
   ]
-  
-  // All mistake pages (1 per tense = 12 pages)
+
+  // ===== ALL 12 MISTAKES PAGES =====
   const mistakes = [
     'present-simple',
     'present-continuous',
@@ -95,52 +103,59 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'future-perfect',
     'future-perfect-continuous',
   ]
-  
-  // Main routes sitemap
-  const mainRoutes = routes.map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: 'daily' as const,
-    priority: route === '' ? 1 : 0.8,
-  }))
-  
-  // Tenses sitemap
-  const tensesRoutes = tenses.map((tense) => ({
-    url: `${baseUrl}/tenses/${tense}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.7,
-  }))
-  
-  // Exercises sitemap
-  const exercisesRoutes = exercises.map((exercise) => ({
-    url: `${baseUrl}/exercises/${exercise}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.6,
-  }))
-  
-  // Quizzes sitemap
-  const quizzesRoutes = quizzes.map((quiz) => ({
-    url: `${baseUrl}/quizzes/${quiz}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.6,
-  }))
-  
-  // Mistakes sitemap
-  const mistakesRoutes = mistakes.map((mistake) => ({
-    url: `${baseUrl}/mistakes/${mistake}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.5,
-  }))
-  
-  return [
-    ...mainRoutes,
-    ...tensesRoutes,
-    ...exercisesRoutes,
-    ...quizzesRoutes,
-    ...mistakesRoutes,
-  ]
+
+  // ===== BUILD SITEMAP =====
+  const sitemapEntries: MetadataRoute.Sitemap = []
+
+  // 1. Main Pages (including new legal pages)
+  for (const page of mainPages) {
+    sitemapEntries.push({
+      url: `${baseUrl}${page.path}`,
+      lastModified: new Date(),
+      changeFrequency: page.changefreq,
+      priority: page.priority,
+    })
+  }
+
+  // 2. Tenses
+  for (const tense of tenses) {
+    sitemapEntries.push({
+      url: `${baseUrl}/tenses/${tense}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    })
+  }
+
+  // 3. Exercises
+  for (const exercise of exercises) {
+    sitemapEntries.push({
+      url: `${baseUrl}/exercises/${exercise}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.6,
+    })
+  }
+
+  // 4. Quizzes
+  for (const quiz of quizzes) {
+    sitemapEntries.push({
+      url: `${baseUrl}/quizzes/${quiz}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.6,
+    })
+  }
+
+  // 5. Mistakes
+  for (const mistake of mistakes) {
+    sitemapEntries.push({
+      url: `${baseUrl}/mistakes/${mistake}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.5,
+    })
+  }
+
+  return sitemapEntries
 }

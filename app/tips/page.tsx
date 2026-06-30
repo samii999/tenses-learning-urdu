@@ -366,14 +366,14 @@ export default function TipsPage() {
           
           <div className="flex flex-wrap justify-center gap-4">
             <Link 
-              href="/tenses"
+              href="/tenses-in-urdu"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center"
             >
               <FaBookOpen className="mr-2" />
               All Tenses
             </Link>
             <Link 
-              href="/exercises"
+              href="/exercises-in-urdu"
               className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center"
             >
               <FaBookOpen className="mr-2" />
