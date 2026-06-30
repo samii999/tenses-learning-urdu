@@ -197,7 +197,7 @@ export default function PastPerfectQuiz() {
                 ← All Quizzes
               </Link>
               <span className="mx-2 text-white/60">|</span>
-              <Link href="/tenses/past-perfect" className="text-white/80 hover:text-white transition duration-300">
+              <Link href="/tenses-in-urdu/past-perfect" className="text-white/80 hover:text-white transition duration-300">
                 Past Perfect Tense
               </Link>
             </div>
@@ -278,7 +278,7 @@ export default function PastPerfectQuiz() {
               ← All Quizzes
             </Link>
             <span className="mx-2 text-white/60">|</span>
-            <Link href="/tenses/past-perfect" className="text-white/80 hover:text-white transition duration-300">
+           <Link href="/tenses-in-urdu/past-perfect" className="text-white/80 hover:text-white transition duration-300">
               Past Perfect Tense
             </Link>
           </div>
@@ -401,13 +401,13 @@ export default function PastPerfectQuiz() {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-wrap justify-center gap-4">
             <Link 
-              href="/tenses/past-perfect"
+              href="/tenses-in-urdu/past-perfect"
               className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
             >
               Review Lesson
             </Link>
             <Link 
-              href="/exercises/past-perfect-exercise-1"
+              href="/exercises-in-urdu/past-perfect-exercise-1"
               className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
             >
               Practice Exercises

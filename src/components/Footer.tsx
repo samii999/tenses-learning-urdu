@@ -3,9 +3,9 @@ import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 export default function Footer() {
   const quickLinks = [
-    { name: 'Present Tenses', href: '/tenses/present-simple' },
-    { name: 'Past Tenses', href: '/tenses/past-simple' },
-    { name: 'Future Tenses', href: '/tenses/future-simple' },
+    { name: 'Present Tenses', href: '/tenses-in-urdu/present-simple' },
+    { name: 'Past Tenses', href: '/tenses-in-urdu/past-simple' },
+    { name: 'Future Tenses', href: '/tenses-in-urdu/future-simple' },
     { name: 'Grammar Basics', href: '/grammer-basics-in-urdu' },
     { name: 'Verb Forms', href: '/verb-forms' },
     { name: 'Exercises', href: '/exercises-in-urdu' },
@@ -15,7 +15,7 @@ export default function Footer() {
   const resources = [
     { name: 'Learning Tips', href: '/tips' },
     { name: 'Common Mistakes', href: '/mistakes' },
-    { name: 'All Tenses', href: '/tenses' },
+    { name: 'All Tenses', href: '/tenses-in-urdu' },
     { name: 'Tenses in Urdu', href: '/tenses-in-urdu' },
     { name: 'Exercises', href: '/exercises' },
     { name: 'FAQ', href: '/faq' },

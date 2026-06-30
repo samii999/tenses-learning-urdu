@@ -12,7 +12,7 @@ export default function PastSimpleMistakesPage() {
               ← All Mistakes
             </Link>
             <span className="mx-2 text-white/60">|</span>
-            <Link href="/tenses/past-simple" className="text-white/80 hover:text-white transition duration-300">
+           <Link href="/tenses-in-urdu/past-simple" className="text-white/80 hover:text-white transition duration-300">
               Past Simple Tense
             </Link>
           </div>
@@ -745,7 +745,7 @@ export default function PastSimpleMistakesPage() {
           {/* Practice Links */}
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             <Link 
-              href="/exercises/past-simple-exercise-1"
+              href="/exercises-in-urdu/past-simple-exercise-1"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
             >
               Practice Exercises →
@@ -757,7 +757,7 @@ export default function PastSimpleMistakesPage() {
               Take Quiz
             </Link>
             <Link 
-              href="/tenses/past-simple"
+              href="/tenses-in-urdu/past-simple"
               className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
             >
               Review Lesson

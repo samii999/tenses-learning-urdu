@@ -107,7 +107,7 @@ export default function Home() {
                     <li key={idx} className="flex items-center">
                       <span className="w-2 h-2 bg-gray-700 rounded-full mr-3"></span>
                       <Link 
-                        href={`/tenses/${tense.toLowerCase().replace(/ /g, '-')}`}
+                        href={`/tenses-in-urdu/${tense.toLowerCase().replace(/ /g, '-')}`}
                         className="text-gray-800 hover:text-blue-700 transition duration-300"
                       >
                         {tense}

@@ -12,7 +12,7 @@ export default function FutureSimpleMistakesPage() {
               ← All Mistakes
             </Link>
             <span className="mx-2 text-white/60">|</span>
-            <Link href="/tenses/future-simple" className="text-white/80 hover:text-white transition duration-300">
+           <Link href="/tenses-in-urdu/future-simple" className="text-white/80 hover:text-white transition duration-300">
               Future Simple Tense
             </Link>
           </div>
@@ -799,7 +799,7 @@ export default function FutureSimpleMistakesPage() {
           {/* Practice Links */}
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             <Link 
-              href="/exercises/future-simple-exercise-1"
+              href="/exercises-in-urdu/future-simple-exercise-1"
               className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
             >
               Practice Exercises →
@@ -811,7 +811,7 @@ export default function FutureSimpleMistakesPage() {
               Take Quiz
             </Link>
             <Link 
-              href="/tenses/future-simple"
+              href="/tenses-in-urdu/future-simple"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
             >
               Review Lesson

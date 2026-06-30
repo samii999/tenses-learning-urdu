@@ -20,7 +20,7 @@ export default function Header() {
     if (pathname === '/verb-forms') return 'Verb Forms';
     
     // For tense pages
-    if (pathname.includes('/tenses/')) {
+    if (pathname.includes('/tenses-in-urdu/')) {
       const tenseName = pathname.split('/')[2];
       if (tenseName) {
         return tenseName.split('-').map(word => 

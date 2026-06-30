@@ -388,7 +388,7 @@ export default function MistakesPage() {
           </div>
           
           <div className="mt-8">
-            <Link href="/exercises" className="text-white underline hover:no-underline">
+            <Link href="/exercises-in-urdu" className="text-white underline hover:no-underline">
               Practice with exercises →
             </Link>
           </div>

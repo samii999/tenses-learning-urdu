@@ -8,41 +8,41 @@ export default function ExercisesPage() {
       tenses: [
         {
           name: "Present Simple",
-          href: "/exercises/present-simple-exercise-1",
+          href: "/exercises-in-urdu/present-simple-exercise-1",
           description: "Practice Present Simple tense with basic Urdu to English translations",
           exercises: [
-            { name: "Exercise 1: Basic Sentences", href: "/exercises/present-simple-exercise-1" },
-            { name: "Exercise 2: Questions & Negatives", href: "/exercises/present-simple-exercise-2" }
+            { name: "Exercise 1: Basic Sentences", href: "/exercises-in-urdu/present-simple-exercise-1" },
+            { name: "Exercise 2: Questions & Negatives", href: "/exercises-in-urdu/present-simple-exercise-2" }
           ],
           difficulty: "Beginner"
         },
         {
           name: "Present Continuous",
-          href: "/exercises/present-continuous-exercise-1",
+          href: "/exercises-in-urdu/present-continuous-exercise-1",
           description: "Practice ongoing actions and future plans in Urdu context",
           exercises: [
-            { name: "Exercise 1: Current Actions", href: "/exercises/present-continuous-exercise-1" },
-            { name: "Exercise 2: Future Arrangements", href: "/exercises/present-continuous-exercise-2" }
+            { name: "Exercise 1: Current Actions", href: "/exercises-in-urdu/present-continuous-exercise-1" },
+            { name: "Exercise 2: Future Arrangements", href: "/exercises-in-urdu/present-continuous-exercise-2" }
           ],
           difficulty: "Beginner"
         },
         {
           name: "Present Perfect",
-          href: "/exercises/present-perfect-exercise-1",
+          href: "/exercises-in-urdu/present-perfect-exercise-1",
           description: "Practice experiences and completed actions affecting present",
           exercises: [
-            { name: "Exercise 1: Life Experiences", href: "/exercises/present-perfect-exercise-1" },
-            { name: "Exercise 2: Recent Actions", href: "/exercises/present-perfect-exercise-2" }
+            { name: "Exercise 1: Life Experiences", href: "/exercises-in-urdu/present-perfect-exercise-1" },
+            { name: "Exercise 2: Recent Actions", href: "/exercises-in-urdu/present-perfect-exercise-2" }
           ],
           difficulty: "Intermediate"
         },
         {
           name: "Present Perfect Continuous",
-          href: "/exercises/present-perfect-continuous-exercise-1",
+          href: "/exercises-in-urdu/present-perfect-continuous-exercise-1",
           description: "Practice duration of actions from past to present",
           exercises: [
-            { name: "Exercise 1: Duration Practice", href: "/exercises/present-perfect-continuous-exercise-1" },
-            { name: "Exercise 2: Mixed Scenarios", href: "/exercises/present-perfect-continuous-exercise-2" }
+            { name: "Exercise 1: Duration Practice", href: "/exercises-in-urdu/present-perfect-continuous-exercise-1" },
+            { name: "Exercise 2: Mixed Scenarios", href: "/exercises-in-urdu/present-perfect-continuous-exercise-2" }
           ],
           difficulty: "Intermediate"
         }
@@ -53,41 +53,41 @@ export default function ExercisesPage() {
       tenses: [
         {
           name: "Past Simple",
-          href: "/exercises/past-simple-exercise-1",
+          href: "/exercises-in-urdu/past-simple-exercise-1",
           description: "Practice completed past actions and events",
           exercises: [
-            { name: "Exercise 1: Regular Verbs", href: "/exercises/past-simple-exercise-1" },
-            { name: "Exercise 2: Irregular Verbs", href: "/exercises/past-simple-exercise-2" }
+            { name: "Exercise 1: Regular Verbs", href: "/exercises-in-urdu/past-simple-exercise-1" },
+            { name: "Exercise 2: Irregular Verbs", href: "/exercises-in-urdu/past-simple-exercise-2" }
           ],
           difficulty: "Beginner"
         },
         {
           name: "Past Continuous",
-          href: "/exercises/past-continuous-exercise-1",
+          href: "/exercises-in-urdu/past-continuous-exercise-1",
           description: "Practice ongoing past actions and interrupted events",
           exercises: [
-            { name: "Exercise 1: Interrupted Actions", href: "/exercises/past-continuous-exercise-1" },
-            { name: "Exercise 2: Parallel Actions", href: "/exercises/past-continuous-exercise-2" }
+            { name: "Exercise 1: Interrupted Actions", href: "/exercises-in-urdu/past-continuous-exercise-1" },
+            { name: "Exercise 2: Parallel Actions", href: "/exercises-in-urdu/past-continuous-exercise-2" }
           ],
           difficulty: "Intermediate"
         },
         {
           name: "Past Perfect",
-          href: "/exercises/past-perfect-exercise-1",
+          href: "/exercises-in-urdu/past-perfect-exercise-1",
           description: "Practice sequencing of past events",
           exercises: [
-            { name: "Exercise 1: Sequence Practice", href: "/exercises/past-perfect-exercise-1" },
-            { name: "Exercise 2: Time Clauses", href: "/exercises/past-perfect-exercise-2" }
+            { name: "Exercise 1: Sequence Practice", href: "/exercises-in-urdu/past-perfect-exercise-1" },
+            { name: "Exercise 2: Time Clauses", href: "/exercises-in-urdu/past-perfect-exercise-2" }
           ],
           difficulty: "Intermediate"
         },
         {
           name: "Past Perfect Continuous",
-          href: "/exercises/past-perfect-continuous-exercise-1",
+          href: "/exercises-in-urdu/past-perfect-continuous-exercise-1",
           description: "Practice duration before another past action",
           exercises: [
-            { name: "Exercise 1: Duration Focus", href: "/exercises/past-perfect-continuous-exercise-1" },
-            { name: "Exercise 2: Cause & Effect", href: "/exercises/past-perfect-continuous-exercise-2" }
+            { name: "Exercise 1: Duration Focus", href: "/exercises-in-urdu/past-perfect-continuous-exercise-1" },
+            { name: "Exercise 2: Cause & Effect", href: "/exercises-in-urdu/past-perfect-continuous-exercise-2" }
           ],
           difficulty: "Advanced"
         }
@@ -98,41 +98,41 @@ export default function ExercisesPage() {
       tenses: [
         {
           name: "Future Simple",
-          href: "/exercises/future-simple-exercise-1",
+          href: "/exercises-in-urdu/future-simple-exercise-1",
           description: "Practice predictions and spontaneous decisions",
           exercises: [
-            { name: "Exercise 1: Predictions", href: "/exercises/future-simple-exercise-1" },
-            { name: "Exercise 2: Promises & Offers", href: "/exercises/future-simple-exercise-2" }
+            { name: "Exercise 1: Predictions", href: "/exercises-in-urdu/future-simple-exercise-1" },
+            { name: "Exercise 2: Promises & Offers", href: "/exercises-in-urdu/future-simple-exercise-2" }
           ],
           difficulty: "Beginner"
         },
         {
           name: "Future Continuous",
-          href: "/exercises/future-continuous-exercise-1",
+          href: "/exercises-in-urdu/future-continuous-exercise-1",
           description: "Practice actions in progress at future time",
           exercises: [
-            { name: "Exercise 1: Future Interruptions", href: "/exercises/future-continuous-exercise-1" },
-            { name: "Exercise 2: Parallel Future Actions", href: "/exercises/future-continuous-exercise-2" }
+            { name: "Exercise 1: Future Interruptions", href: "/exercises-in-urdu/future-continuous-exercise-1" },
+            { name: "Exercise 2: Parallel Future Actions", href: "/exercises-in-urdu/future-continuous-exercise-2" }
           ],
           difficulty: "Intermediate"
         },
         {
           name: "Future Perfect",
-          href: "/exercises/future-perfect-exercise-1",
+          href: "/exercises-in-urdu/future-perfect-exercise-1",
           description: "Practice actions completed before future time",
           exercises: [
-            { name: "Exercise 1: By/Before Practice", href: "/exercises/future-perfect-exercise-1" },
-            { name: "Exercise 2: Life Milestones", href: "/exercises/future-perfect-exercise-2" }
+            { name: "Exercise 1: By/Before Practice", href: "/exercises-in-urdu/future-perfect-exercise-1" },
+            { name: "Exercise 2: Life Milestones", href: "/exercises-in-urdu/future-perfect-exercise-2" }
           ],
           difficulty: "Advanced"
         },
         {
           name: "Future Perfect Continuous",
-          href: "/exercises/future-perfect-continuous-exercise-1",
+          href: "/exercises-in-urdu/future-perfect-continuous-exercise-1",
           description: "Practice duration before future point",
           exercises: [
-            { name: "Exercise 1: Duration Focus", href: "/exercises/future-perfect-continuous-exercise-1" },
-            { name: "Exercise 2: Career Scenarios", href: "/exercises/future-perfect-continuous-exercise-2" }
+            { name: "Exercise 1: Duration Focus", href: "/exercises-in-urdu/future-perfect-continuous-exercise-1" },
+            { name: "Exercise 2: Career Scenarios", href: "/exercises-in-urdu/future-perfect-continuous-exercise-2" }
           ],
           difficulty: "Advanced"
         }
@@ -360,7 +360,7 @@ export default function ExercisesPage() {
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             <Link 
-              href="/exercises/present-simple-exercise-1" 
+              href="/exercises-in-urdu/present-simple-exercise-1" 
               className="bg-white text-teal-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg text-lg transition duration-300 inline-flex items-center"
             >
               Start with Present Simple

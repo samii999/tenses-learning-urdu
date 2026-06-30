@@ -7,7 +7,7 @@ export default function TensesInUrduPage() {
       name: "Present Simple",
       urduName: "حال سادہ",
       description: "دوران حال کی عادتیں، حقائق اور مستقل سچائیاں",
-      href: "/tenses/present-simple",
+      href: "/tenses-in-urdu/present-simple",
       examples: [
         "میں روزانہ سکول جاتا ہوں۔ (I go to school daily.)",
         "سورج مشرق سے نکلتا ہے۔ (The sun rises in the east.)"
@@ -17,7 +17,7 @@ export default function TensesInUrduPage() {
       name: "Present Continuous",
       urduName: "حال جاری",
       description: "ابھی جاری کام یا قریب کے مستقبل کے منصوبے",
-      href: "/tenses/present-continuous",
+      href: "/tenses-in-urdu/present-continuous",
       examples: [
         "وہ ابھی کھانا کھا رہا ہے۔ (He is eating food now.)",
         "ہم کل لاہور جا رہے ہیں۔ (We are going to Lahore tomorrow.)"
@@ -27,7 +27,7 @@ export default function TensesInUrduPage() {
       name: "Present Perfect",
       urduName: "حال مکمل",
       description: "گذشتہ کام جن کا اثر حال پر ہے",
-      href: "/tenses/present-perfect",
+      href: "/tenses-in-urdu/present-perfect",
       examples: [
         "میں نے یہ کتاب پڑھی ہے۔ (I have read this book.)",
         "وہ کبھی امریکا نہیں گیا ہے۔ (He has never been to America.)"
@@ -37,7 +37,7 @@ export default function TensesInUrduPage() {
       name: "Present Perfect Continuous",
       urduName: "حال مکمل جاری",
       description: "گذشتہ سے جاری کام جو ابھی بھی چل رہا ہے",
-      href: "/tenses/present-perfect-continuous",
+      href: "/tenses-in-urdu/present-perfect-continuous",
       examples: [
         "میں دو گھنٹے سے پڑھ رہا ہوں۔ (I have been studying for two hours.)",
         "وہ 2010 سے یہاں رہ رہے ہیں۔ (They have been living here since 2010.)"
@@ -47,7 +47,7 @@ export default function TensesInUrduPage() {
       name: "Past Simple",
       urduName: "ماضی سادہ",
       description: "ماضی کا مکمل ہوا کام",
-      href: "/tenses/past-simple",
+      href: "/tenses-in-urdu/past-simple",
       examples: [
         "میں کل بازار گیا تھا۔ (I went to market yesterday.)",
         "اس نے اپنا کام مکمل کیا۔ (He completed his work.)"
@@ -57,7 +57,7 @@ export default function TensesInUrduPage() {
       name: "Past Continuous",
       urduName: "ماضی جاری",
       description: "ماضی میں جاری تھا یا دو کام ایک ساتھ ہو رہے تھے",
-      href: "/tenses/past-continuous",
+      href: "/tenses-in-urdu/past-continuous",
       examples: [
         "میں سوتا تھا جب وہ آیا۔ (I was sleeping when he came.)",
         "وہ صبح سے کام کر رہا تھا۔ (He was working since morning.)"
@@ -67,7 +67,7 @@ export default function TensesInUrduPage() {
       name: "Past Perfect",
       urduName: "ماضی مکمل",
       description: "ماضی کے دو کاموں میں سے پہلے مکمل ہوا کام",
-      href: "/tenses/past-perfect",
+      href: "/tenses-in-urdu/past-perfect",
       examples: [
         "میں کھانا کھا چکا تھا جب وہ آیا۔ (I had eaten food when he came.)",
         "بارش شروع ہو چکی تھی جب ہم گھر پہنچے۔ (The rain had started when we reached home.)"
@@ -77,7 +77,7 @@ export default function TensesInUrduPage() {
       name: "Past Perfect Continuous",
       urduName: "ماضی مکمل جاری",
       description: "ماضی میں کسی وقت سے جاری تھا اور ماضی میں ہی ختم ہوا",
-      href: "/tenses/past-perfect-continuous",
+      href: "/tenses-in-urdu/past-perfect-continuous",
       examples: [
         "میں دو گھنٹے سے پڑھ رہا تھا جب وہ آیا۔ (I had been studying for two hours when he came.)",
         "وہ تین سال سے یہ کام کر رہا تھا۔ (He had been doing this work for three years.)"
@@ -87,7 +87,7 @@ export default function TensesInUrduPage() {
       name: "Future Simple",
       urduName: "مستقبل سادہ",
       description: "مستقبل میں ہونے والا کام",
-      href: "/tenses/future-simple",
+      href: "/tenses-in-urdu/future-simple",
       examples: [
         "میں کل آپ سے ملوں گا۔ (I will meet you tomorrow.)",
         "وہ ضرور کامیاب ہوگا۔ (He will surely succeed.)"
@@ -97,7 +97,7 @@ export default function TensesInUrduPage() {
       name: "Future Continuous",
       urduName: "مستقبل جاری",
       description: "مستقبل میں کسی خاص وقت پر جاری ہوگا",
-      href: "/tenses/future-continuous",
+      href: "/tenses-in-urdu/future-continuous",
       examples: [
         "میں کل اس وقت سفر کر رہا ہوں گا۔ (I will be traveling at that time tomorrow.)",
         "وہ اگلے ماہ نیا گھر بنا رہا ہوگا۔ (He will be building a new house next month.)"
@@ -107,7 +107,7 @@ export default function TensesInUrduPage() {
       name: "Future Perfect",
       urduName: "مستقبل مکمل",
       description: "مستقبل میں کسی وقت تک مکمل ہو چکا ہوگا",
-      href: "/tenses/future-perfect",
+      href: "/tenses-in-urdu/future-perfect",
       examples: [
         "میں اگلے سال تک ڈگری مکمل کر چکا ہوں گا۔ (I will have completed my degree by next year.)",
         "وہ شام تک کام ختم کر چکا ہوگا۔ (He will have finished the work by evening.)"
@@ -117,7 +117,7 @@ export default function TensesInUrduPage() {
       name: "Future Perfect Continuous",
       urduName: "مستقبل مکمل جاری",
       description: "مستقبل میں کسی وقت تک مسلسل جاری رہے گا",
-      href: "/tenses/future-perfect-continuous",
+      href: "/tenses-in-urdu/future-perfect-continuous",
       examples: [
         "میں دس سال سے یہاں کام کر رہا ہوں گا۔ (I will have been working here for ten years.)",
         "وہ تین گھنٹے سے انتظار کر رہا ہوگا۔ (He will have been waiting for three hours.)"
@@ -142,7 +142,7 @@ export default function TensesInUrduPage() {
             <span className="bg-white/20 px-4 py-2 rounded-full">English grammar tenses in Urdu</span>
           </div>
           <Link 
-            href="/tenses/present-simple" 
+            href="/tenses-in-urdu/present-simple" 
             className="inline-flex items-center bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg text-lg transition duration-300"
           >
             Start Learning All Tenses

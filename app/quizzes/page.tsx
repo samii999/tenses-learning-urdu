@@ -288,7 +288,7 @@ export default function QuizzesPage() {
               Start with Present Simple
             </Link>
             <Link 
-              href="/tenses"
+              href="/tenses-in-urdu"
               className="bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300"
             >
               Review Tenses First

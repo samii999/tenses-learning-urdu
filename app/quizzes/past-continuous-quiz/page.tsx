@@ -197,7 +197,7 @@ export default function PastContinuousQuiz() {
                 ← All Quizzes
               </Link>
               <span className="mx-2 text-white/60">|</span>
-              <Link href="/tenses/past-continuous" className="text-white/80 hover:text-white transition duration-300">
+              <Link href="/tenses-in-urdu/past-continuous" className="text-white/80 hover:text-white transition duration-300">
                 Past Continuous Tense
               </Link>
             </div>
@@ -278,7 +278,7 @@ export default function PastContinuousQuiz() {
               ← All Quizzes
             </Link>
             <span className="mx-2 text-white/60">|</span>
-            <Link href="/tenses/past-continuous" className="text-white/80 hover:text-white transition duration-300">
+           <Link href="/tenses-in-urdu/past-continuous" className="text-white/80 hover:text-white transition duration-300">
               Past Continuous Tense
             </Link>
           </div>
@@ -401,13 +401,13 @@ export default function PastContinuousQuiz() {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-wrap justify-center gap-4">
             <Link 
-              href="/tenses/past-continuous"
+              href="/tenses-in-urdu/past-continuous"
               className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
             >
               Review Lesson
             </Link>
             <Link 
-              href="/exercises/past-continuous-exercise-1"
+              href="/exercises-in-urdu/past-continuous-exercise-1"
               className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
             >
               Practice Exercises

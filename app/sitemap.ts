@@ -3,12 +3,12 @@ import { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://tensesurdu.vercel.app'
   
-  // ===== MAIN PAGES =====
+  // ===== MAIN PAGES (ONLY EXISTING FOLDERS) =====
   const mainPages = [
     { path: '', priority: 1.0, changefreq: 'daily' as const },
-    { path: '/tenses', priority: 0.9, changefreq: 'daily' as const },
+    
     { path: '/tenses-in-urdu', priority: 0.9, changefreq: 'daily' as const },
-    { path: '/exercises', priority: 0.9, changefreq: 'daily' as const },
+
     { path: '/exercises-in-urdu', priority: 0.9, changefreq: 'daily' as const },
     { path: '/quizzes', priority: 0.9, changefreq: 'daily' as const },
     { path: '/mistakes', priority: 0.9, changefreq: 'daily' as const },
@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/faq', priority: 0.6, changefreq: 'monthly' as const },
   ]
 
-  // ===== ALL 12 TENSES =====
+  // ===== ALL 12 TENSES (located in /tenses-in-urdu/) =====
   const tenses = [
     'present-simple',
     'present-continuous',
@@ -39,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'future-perfect-continuous',
   ]
 
-  // ===== ALL 24 EXERCISES =====
+  // ===== ALL 24 EXERCISES (located in /exercises-in-urdu/) =====
   const exercises = [
     'present-simple-exercise-1',
     'present-simple-exercise-2',
@@ -112,20 +112,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
-  // 2. Individual Tenses
+  // 2. Individual Tenses (URL: /tenses-in-urdu/present-simple)
   for (const tense of tenses) {
     sitemapEntries.push({
-      url: `${baseUrl}/tenses/${tense}`,
+      url: `${baseUrl}/tenses-in-urdu/${tense}`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.7,
     })
   }
 
-  // 3. Individual Exercises
+  // 3. Individual Exercises (URL: /exercises-in-urdu/present-simple-exercise-1)
   for (const exercise of exercises) {
     sitemapEntries.push({
-      url: `${baseUrl}/exercises/${exercise}`,
+      url: `${baseUrl}/exercises-in-urdu/${exercise}`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.6,

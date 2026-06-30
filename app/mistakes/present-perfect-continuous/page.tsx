@@ -12,7 +12,7 @@ export default function PresentPerfectContinuousMistakesPage() {
               ← All Mistakes
             </Link>
             <span className="mx-2 text-white/60">|</span>
-            <Link href="/tenses/present-perfect-continuous" className="text-white/80 hover:text-white transition duration-300">
+           <Link href="/tenses-in-urdu/present-perfect-continuous" className="text-white/80 hover:text-white transition duration-300">
               Present Perfect Continuous Tense
             </Link>
           </div>
@@ -773,7 +773,7 @@ export default function PresentPerfectContinuousMistakesPage() {
           {/* Practice Links */}
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             <Link 
-              href="/exercises/present-perfect-continuous-exercise-1"
+              href="/exercises-in-urdu/present-perfect-continuous-exercise-1"
               className="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
             >
               Practice Exercises →
@@ -785,7 +785,7 @@ export default function PresentPerfectContinuousMistakesPage() {
               Take Quiz
             </Link>
             <Link 
-              href="/tenses/present-perfect-continuous"
+              href="/tenses-in-urdu/present-perfect-continuous"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
             >
               Review Lesson

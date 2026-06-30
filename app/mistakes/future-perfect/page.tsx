@@ -12,7 +12,7 @@ export default function FuturePerfectMistakesPage() {
               ← All Mistakes
             </Link>
             <span className="mx-2 text-white/60">|</span>
-            <Link href="/tenses/future-perfect" className="text-white/80 hover:text-white transition duration-300">
+            <Link href="/tenses-in-urdu/future-perfect" className="text-white/80 hover:text-white transition duration-300">
               Future Perfect Tense
             </Link>
           </div>
@@ -748,7 +748,7 @@ export default function FuturePerfectMistakesPage() {
           {/* Practice Links */}
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             <Link 
-              href="/exercises/future-perfect-exercise-1"
+              href="/exercises-in-urdu/future-perfect-exercise-1"
               className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
             >
               Practice Exercises →
@@ -760,7 +760,7 @@ export default function FuturePerfectMistakesPage() {
               Take Quiz
             </Link>
             <Link 
-              href="/tenses/future-perfect"
+              href="/tenses-in-urdu/future-perfect"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
             >
               Review Lesson

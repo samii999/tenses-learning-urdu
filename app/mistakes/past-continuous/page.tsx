@@ -12,7 +12,7 @@ export default function PastContinuousMistakesPage() {
               ← All Mistakes
             </Link>
             <span className="mx-2 text-white/60">|</span>
-            <Link href="/tenses/past-continuous" className="text-white/80 hover:text-white transition duration-300">
+           <Link href="/tenses-in-urdu/past-continuous" className="text-white/80 hover:text-white transition duration-300">
               Past Continuous Tense
             </Link>
           </div>
@@ -725,7 +725,7 @@ export default function PastContinuousMistakesPage() {
           {/* Practice Links */}
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             <Link 
-              href="/exercises/past-continuous-exercise-1"
+              href="/exercises-in-urdu/past-continuous-exercise-1"
               className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
             >
               Practice Exercises →
@@ -737,7 +737,7 @@ export default function PastContinuousMistakesPage() {
               Take Quiz
             </Link>
             <Link 
-              href="/tenses/past-continuous"
+              href="/tenses-in-urdu/past-continuous"
               className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
             >
               Review Lesson

@@ -197,7 +197,7 @@ export default function PastSimpleQuiz() {
                 ← All Quizzes
               </Link>
               <span className="mx-2 text-white/60">|</span>
-              <Link href="/tenses/past-simple" className="text-white/80 hover:text-white transition duration-300">
+              <Link href="/tenses-in-urdu/past-simple" className="text-white/80 hover:text-white transition duration-300">
                 Past Simple Tense
               </Link>
             </div>
@@ -278,7 +278,7 @@ export default function PastSimpleQuiz() {
               ← All Quizzes
             </Link>
             <span className="mx-2 text-white/60">|</span>
-            <Link href="/tenses/past-simple" className="text-white/80 hover:text-white transition duration-300">
+           <Link href="/tenses-in-urdu/past-simple" className="text-white/80 hover:text-white transition duration-300">
               Past Simple Tense
             </Link>
           </div>
@@ -401,13 +401,13 @@ export default function PastSimpleQuiz() {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-wrap justify-center gap-4">
             <Link 
-              href="/tenses/past-simple"
+              href="/tenses-in-urdu/past-simple"
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
             >
               Review Lesson
             </Link>
             <Link 
-              href="/exercises/past-simple-exercise-1"
+              href="/exercises-in-urdu/past-simple-exercise-1"
               className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
             >
               Practice Exercises
